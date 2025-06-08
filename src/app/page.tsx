@@ -39,14 +39,14 @@ export default function Home() {
               <br />
               <GradientText className="block">マスター講座</GradientText>
             </h1>
-            
+
             <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed">
               AnthropicのClaude Codeを使いこなして、
               <br />
               <GradientText gradient="from-cyan-400 to-blue-400">AI時代のプログラミングスキル</GradientText>
               を身につけよう
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
               <ModernButton variant="gradient" size="lg">
                 ✨ 今すぐ申し込む
@@ -183,7 +183,7 @@ export default function Home() {
                 topics: ["Claude Codeの概要と特徴", "インストールと初期設定", "基本的なコマンドの使い方", "ファイル操作の基本"]
               },
               {
-                module: "Module 02", 
+                module: "Module 02",
                 title: "実践的なコード生成",
                 duration: "3時間",
                 level: "初級",
@@ -193,7 +193,7 @@ export default function Home() {
               {
                 module: "Module 03",
                 title: "プロジェクト管理",
-                duration: "4時間", 
+                duration: "4時間",
                 level: "中級",
                 levelColor: "from-yellow-400 to-orange-500",
                 topics: ["複数ファイルの同時編集", "プロジェクト構造の最適化", "テストコードの自動生成", "ドキュメント作成"]
@@ -202,7 +202,7 @@ export default function Home() {
                 module: "Module 04",
                 title: "チーム開発での活用",
                 duration: "3時間",
-                level: "中級", 
+                level: "中級",
                 levelColor: "from-yellow-400 to-orange-500",
                 topics: ["コードレビューの効率化", "一貫したコーディングスタイル", "CI/CDパイプラインとの連携", "チームでのベストプラクティス"]
               },
@@ -232,7 +232,7 @@ export default function Home() {
               >
                 <ModernCard variant="glow" className="h-full group overflow-hidden relative">
                   <div className={`absolute top-0 right-0 w-32 h-32 bg-gradient-to-br ${item.levelColor} opacity-10 rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-700`}></div>
-                  
+
                   <div className="relative z-10">
                     <div className="flex justify-between items-start mb-6">
                       <div>
@@ -244,18 +244,18 @@ export default function Home() {
                         </h3>
                       </div>
                     </div>
-                    
+
                     <div className="flex gap-3 items-center mb-6">
                       <span className={`px-3 py-1 rounded-full text-xs font-medium bg-gradient-to-r ${item.levelColor} text-white shadow-lg`}>
                         {item.level}
                       </span>
                       <span className="text-gray-500 text-sm">{item.duration}</span>
                     </div>
-                    
+
                     <ul className="space-y-3">
                       {item.topics.map((topic, topicIndex) => (
-                        <motion.li 
-                          key={topicIndex} 
+                        <motion.li
+                          key={topicIndex}
                           initial={{ opacity: 0, x: -20 }}
                           whileInView={{ opacity: 1, x: 0 }}
                           transition={{ delay: (index * 0.1) + (topicIndex * 0.1) }}
@@ -337,7 +337,7 @@ export default function Home() {
                 gradient: "from-yellow-400 to-orange-500"
               },
               {
-                icon: "⏰", 
+                icon: "⏰",
                 title: "時間短縮",
                 description: "開発時間を50%以上短縮し、より創造的な作業に集中",
                 gradient: "from-blue-400 to-cyan-500"
@@ -399,13 +399,13 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { 
-                name: "ベーシック", 
-                price: "19,800", 
+              {
+                name: "ベーシック",
+                price: "19,800",
                 desc: "Claude Codeの基本を学びたい方におすすめ",
                 features: [
                   "モジュール1-3（9時間）",
-                  "基本的なハンズオン演習", 
+                  "基本的なハンズオン演習",
                   "30日間のメールサポート",
                   "修了証発行",
                   "永続アクセス"
@@ -413,14 +413,14 @@ export default function Home() {
                 popular: false,
                 gradient: "from-blue-500 to-cyan-500"
               },
-              { 
-                name: "スタンダード", 
-                price: "39,800", 
+              {
+                name: "スタンダード",
+                price: "39,800",
                 desc: "実践的なスキルを身につけたい方に最適",
                 features: [
                   "全モジュール1-6（22時間）",
                   "実践プロジェクト付き",
-                  "90日間のメールサポート", 
+                  "90日間のメールサポート",
                   "1対1メンタリング（2回）",
                   "修了証発行",
                   "永続アクセス",
@@ -429,15 +429,15 @@ export default function Home() {
                 popular: true,
                 gradient: "from-purple-500 to-pink-500"
               },
-              { 
-                name: "プレミアム", 
-                price: "79,800", 
+              {
+                name: "プレミアム",
+                price: "79,800",
                 desc: "本格的にマスターしたい方向け",
                 features: [
                   "全モジュール1-6（22時間）",
                   "実践プロジェクト付き",
                   "6ヶ月間のメールサポート",
-                  "1対1メンタリング（5回）", 
+                  "1対1メンタリング（5回）",
                   "チーム開発ワークショップ",
                   "修了証発行",
                   "永続アクセス",
@@ -455,7 +455,7 @@ export default function Home() {
                 transition={{ duration: 0.8, delay: index * 0.2 }}
                 viewport={{ once: true }}
               >
-                <ModernCard 
+                <ModernCard
                   variant="glass"
                   className={`h-full relative overflow-hidden ${plan.popular ? 'ring-2 ring-purple-400/50' : ''}`}
                 >
@@ -470,7 +470,7 @@ export default function Home() {
                       </motion.div>
                     </div>
                   )}
-                  
+
                   <div className="text-center mb-8 pt-4">
                     <h3 className="text-2xl font-bold text-white mb-4">{plan.name}</h3>
                     <div className={`text-5xl font-bold mb-4 bg-gradient-to-r ${plan.gradient} bg-clip-text text-transparent`}>
@@ -478,10 +478,10 @@ export default function Home() {
                     </div>
                     <p className="text-gray-300 text-sm leading-relaxed">{plan.desc}</p>
                   </div>
-                  
+
                   <ul className="space-y-4 mb-8">
                     {plan.features.map((feature, featureIndex) => (
-                      <motion.li 
+                      <motion.li
                         key={featureIndex}
                         initial={{ opacity: 0, x: -20 }}
                         whileInView={{ opacity: 1, x: 0 }}
@@ -493,8 +493,8 @@ export default function Home() {
                       </motion.li>
                     ))}
                   </ul>
-                  
-                  <ModernButton 
+
+                  <ModernButton
                     variant={plan.popular ? "gradient" : "glass"}
                     className="w-full"
                   >
@@ -522,7 +522,7 @@ export default function Home() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {[
                   "Claude Code活用事例集（非売品）",
-                  "30日間返金保証", 
+                  "30日間返金保証",
                   "優先サポート対応",
                   "追加学習動画プレゼント"
                 ].map((benefit, index) => (
@@ -618,7 +618,7 @@ export default function Home() {
                         </div>
                       </div>
                     </summary>
-                    <motion.div 
+                    <motion.div
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       className="mt-6 pt-6 border-t border-white/20"
@@ -648,16 +648,16 @@ export default function Home() {
                 お気軽にお問い合わせください。24時間以内にご回答いたします。
               </p>
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
-                <a 
-                  href="mailto:support@claude-code-course.com" 
+                <a
+                  href="mailto:support@claude-code-course.com"
                   className="text-blue-600 hover:text-blue-800 font-semibold transition-colors flex items-center justify-center gap-2"
                 >
                   <span className="text-lg">📧</span>
                   support@claude-code-course.com
                 </a>
                 <span className="hidden sm:block text-gray-400">|</span>
-                <a 
-                  href="tel:03-1234-5678" 
+                <a
+                  href="tel:03-1234-5678"
                   className="text-blue-600 hover:text-blue-800 font-semibold transition-colors flex items-center justify-center gap-2"
                 >
                   <span className="text-lg">📞</span>
@@ -701,26 +701,26 @@ export default function Home() {
                 <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
                   お申し込みフォーム
                 </h3>
-                
+
                 <form className="space-y-6">
                   <div>
-                    <input 
-                      type="text" 
-                      placeholder="お名前" 
+                    <input
+                      type="text"
+                      placeholder="お名前"
                       className="w-full p-4 bg-white/80 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 placeholder-gray-500"
                     />
                   </div>
                   <div>
-                    <input 
-                      type="email" 
-                      placeholder="メールアドレス" 
+                    <input
+                      type="email"
+                      placeholder="メールアドレス"
                       className="w-full p-4 bg-white/80 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 placeholder-gray-500"
                     />
                   </div>
                   <div>
-                    <input 
-                      type="tel" 
-                      placeholder="電話番号" 
+                    <input
+                      type="tel"
+                      placeholder="電話番号"
                       className="w-full p-4 bg-white/80 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 placeholder-gray-500"
                     />
                   </div>
@@ -734,8 +734,8 @@ export default function Home() {
                     </select>
                   </div>
                   <div>
-                    <textarea 
-                      placeholder="ご質問・ご要望" 
+                    <textarea
+                      placeholder="ご質問・ご要望"
                       rows={4}
                       className="w-full p-4 bg-white/80 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 placeholder-gray-500 resize-none"
                     ></textarea>
@@ -815,7 +815,7 @@ export default function Home() {
                       </div>
                     ) : (
                       <div className="space-y-4">
-                        {(item.content as string[]).map((step, stepIndex) => (
+                        {(item.content as { step: string; text: string; desc: string }[]).map((step, stepIndex) => (
                           <div key={stepIndex} className="flex gap-4">
                             <div className={`flex-shrink-0 w-8 h-8 bg-gradient-to-r ${item.gradient} rounded-full flex items-center justify-center text-white font-bold text-sm`}>
                               {step.step}
