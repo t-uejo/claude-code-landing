@@ -815,7 +815,7 @@ export default function Home() {
                       </div>
                     ) : (
                       <div className="space-y-4">
-                        {(item.content as any[]).map((step, stepIndex) => (
+                        {(item.content as string[]).map((step, stepIndex) => (
                           <div key={stepIndex} className="flex gap-4">
                             <div className={`flex-shrink-0 w-8 h-8 bg-gradient-to-r ${item.gradient} rounded-full flex items-center justify-center text-white font-bold text-sm`}>
                               {step.step}

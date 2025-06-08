@@ -170,7 +170,7 @@ export default function PricingSection() {
                   </ul>
                   
                   <Button
-                    color={plan.color as any}
+                    color={plan.color as "primary" | "secondary" | "success" | "warning" | "danger" | "default"}
                     variant={plan.popular ? "solid" : "bordered"}
                     className="w-full font-semibold"
                     size="lg"
